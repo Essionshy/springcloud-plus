@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0bbe3eb7-ff61-46b7-aa9f-b14b4f239151" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/springcloud-account-service-seata-2003/src/main/java/com/tingyu/spring/AppAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-account-service-seata-2003/src/main/java/com/tingyu/spring/controller/AccountController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-account-service-seata-2003/src/main/java/com/tingyu/spring/dao/AccountDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-account-service-seata-2003/src/main/java/com/tingyu/spring/domain/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-account-service-seata-2003/src/main/java/com/tingyu/spring/service/AccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-account-service-seata-2003/src/main/java/com/tingyu/spring/service/impl/AccountServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-account-service-seata-2003/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-account-service-seata-2003/src/main/resources/mybatis/mapper/AccountMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-account-service-seata-2003/src/main/resources/mybatis/mybatis.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-api-commons/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-api-commons/src/main/java/com/tingyu/springcloud/commons/CommonResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-api-commons/src/main/java/com/tingyu/springcloud/entities/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-api-commons/src/main/java/com/tingyu/springcloud/entities/Payment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-api-commons/target/classes/com/tingyu/springcloud/commons/CommonResult.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-api-commons/target/classes/com/tingyu/springcloud/entities/Order.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-api-commons/target/classes/com/tingyu/springcloud/entities/Payment.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-api-commons/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-api-commons/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-api-commons/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-api-commons/target/springcloud-api-commons-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-config-client-3355/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-config-client-3355/src/main/java/com/tingyu/springcloud/AppConfigClient3355.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-config-client-3355/src/main/java/com/tingyu/springcloud/controller/ConfigClientController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-config-client-3355/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-config-client-3366/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-config-client-3366/src/main/java/com/tingyu/springcloud/AppConfigClient3356.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-config-client-3366/src/main/java/com/tingyu/springcloud/controller/ConfigClientController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-config-client-3366/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-config-nacos-client-3377/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-config-nacos-client-3377/src/main/java/com/tingyu/springcloud/AppNacosConfigClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-config-nacos-client-3377/src/main/java/com/tingyu/springcloud/controller/ConfigClientController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-config-nacos-client-3377/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-config-nacos-client-3377/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-config-server-3344/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-config-server-3344/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-config-server-3344/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-config-server-3344/target/classes/com/tingyu/springcloud/AppConfigServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-gateway-9527/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-gateway-9527/src/main/java/com/tingyu/springcloud/AppGateway9527.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-gateway-9527/src/main/java/com/tingyu/springcloud/filter/GlobalLogFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-gateway-9527/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-gateway-9527/target/classes/META-INF/springcloud-gateway-9527.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-gateway-9527/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-gateway-9527/target/classes/com/tingyu/springcloud/AppGateway9527.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-gateway-9527/target/classes/com/tingyu/springcloud/filter/GlobalLogFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-order-consumer-80/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-order-consumer-80/src/main/java/com/tingyu/springcloud/AppConsumerOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-order-consumer-80/src/main/java/com/tingyu/springcloud/config/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-order-consumer-80/src/main/java/com/tingyu/springcloud/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-order-consumer-80/src/main/java/com/tingyu/springcloud/dao/OrderDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-order-consumer-80/src/main/java/com/tingyu/springcloud/serivce/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-order-consumer-80/src/main/java/com/tingyu/springcloud/serivce/impl/OrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-order-consumer-80/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-order-consumer-80/src/main/resources/mybatis/mapper/OrderMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-order-consumer-80/src/main/resources/mybatis/mybatis.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-order-consumer-80/target/classes/META-INF/springcloud-consumer-order-80.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-order-consumer-80/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-order-consumer-80/target/classes/com/tingyu/springcloud/AppConsumerOrder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-order-consumer-80/target/classes/com/tingyu/springcloud/controller/OrderController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-order-consumer-80/target/classes/com/tingyu/springcloud/dao/OrderDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-order-consumer-80/target/classes/com/tingyu/springcloud/serivce/OrderService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-order-consumer-80/target/classes/com/tingyu/springcloud/serivce/impl/OrderServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-order-consumer-80/target/classes/mybatis/mapper/OrderMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-order-consumer-80/target/classes/mybatis/mybatis.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-order-consumer-consul-80/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-order-consumer-consul-80/src/main/java/com/tingyu/springcloud/AppConsulConsumerOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-order-consumer-consul-80/src/main/java/com/tingyu/springcloud/config/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-order-consumer-consul-80/src/main/java/com/tingyu/springcloud/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-order-consumer-consul-80/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-order-consumer-consul-80/target/classes/META-INF/springcloud-consumer-order-consul-80.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-order-consumer-consul-80/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-order-consumer-consul-80/target/classes/com/tingyu/springcloud/AppConsulConsumerOrder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-order-consumer-consul-80/target/classes/com/tingyu/springcloud/config/AppConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-order-consumer-consul-80/target/classes/com/tingyu/springcloud/controller/OrderController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-order-consumer-nacos-80/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-order-consumer-nacos-80/src/main/java/com/tingyu/springcloud/AppNacosConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-order-consumer-nacos-80/src/main/java/com/tingyu/springcloud/config/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-order-consumer-nacos-80/src/main/java/com/tingyu/springcloud/controller/ConsumerOrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-order-consumer-nacos-80/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-order-consumer-zk-80/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-order-consumer-zk-80/src/main/java/com/tingyu/springcloud/AppZKConsumerOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-order-consumer-zk-80/src/main/java/com/tingyu/springcloud/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-order-consumer-zk-80/src/main/java/com/tingyu/springcloud/config/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-order-consumer-zk-80/src/main/java/com/tingyu/springcloud/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-order-consumer-zk-80/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-order-consumer-zk-80/target/classes/META-INF/springcloud-consumer-order-zk-80.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-order-consumer-zk-80/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-order-consumer-zk-80/target/classes/com/tingyu/springcloud/AppZKConsumerOrder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-order-consumer-zk-80/target/classes/com/tingyu/springcloud/OrderService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-order-consumer-zk-80/target/classes/com/tingyu/springcloud/config/AppConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-order-consumer-zk-80/target/classes/com/tingyu/springcloud/controller/OrderController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-order-service-seata-2001/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-order-service-seata-2001/src/main/java/com/tingyu/springcloud/AppOrderServiceSeata2001.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-order-service-seata-2001/src/main/java/com/tingyu/springcloud/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-order-service-seata-2001/src/main/java/com/tingyu/springcloud/dao/OrderDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-order-service-seata-2001/src/main/java/com/tingyu/springcloud/domain/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-order-service-seata-2001/src/main/java/com/tingyu/springcloud/service/AccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-order-service-seata-2001/src/main/java/com/tingyu/springcloud/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-order-service-seata-2001/src/main/java/com/tingyu/springcloud/service/StorageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-order-service-seata-2001/src/main/java/com/tingyu/springcloud/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-order-service-seata-2001/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-order-service-seata-2001/src/main/resources/mybatis/mapper/OrderMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-order-service-seata-2001/src/main/resources/mybatis/mybatis.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-8001/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-8001/src/main/java/com/tingyu/springcloud/AppProviderPayment8001.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-8001/src/main/java/com/tingyu/springcloud/config/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-8001/src/main/java/com/tingyu/springcloud/controller/PaymentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-8001/src/main/java/com/tingyu/springcloud/dao/PaymentDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-8001/src/main/java/com/tingyu/springcloud/service/PaymentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-8001/src/main/java/com/tingyu/springcloud/service/impl/PaymentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-8001/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-8001/src/main/resources/mybatis/mapper/PaymentMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-8001/src/main/resources/mybatis/mybatis.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-8001/src/main/resources/sql/payment.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-8001/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-8001/target/classes/com/tingyu/springcloud/AppProviderPayment8001.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-8001/target/classes/com/tingyu/springcloud/config/AppConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-8001/target/classes/com/tingyu/springcloud/controller/PaymentController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-8001/target/classes/com/tingyu/springcloud/dao/PaymentDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-8001/target/classes/com/tingyu/springcloud/service/PaymentService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-8001/target/classes/com/tingyu/springcloud/service/impl/PaymentServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-8001/target/classes/mybatis/mapper/PaymentMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-8001/target/classes/mybatis/mybatis.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-8001/target/classes/sql/payment.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-8002/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-8002/src/main/java/com/tingyu/springcloud/AppProviderPayment8002.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-8002/src/main/java/com/tingyu/springcloud/config/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-8002/src/main/java/com/tingyu/springcloud/controller/PaymentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-8002/src/main/java/com/tingyu/springcloud/dao/PaymentDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-8002/src/main/java/com/tingyu/springcloud/service/PaymentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-8002/src/main/java/com/tingyu/springcloud/service/impl/PaymentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-8002/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-8002/src/main/resources/mybatis/mapper/PaymentMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-8002/src/main/resources/mybatis/mybatis.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-8002/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-8002/target/classes/com/tingyu/springcloud/AppProviderPayment8002.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-8002/target/classes/com/tingyu/springcloud/config/AppConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-8002/target/classes/com/tingyu/springcloud/controller/PaymentController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-8002/target/classes/com/tingyu/springcloud/dao/PaymentDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-8002/target/classes/com/tingyu/springcloud/service/PaymentService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-8002/target/classes/com/tingyu/springcloud/service/impl/PaymentServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-8002/target/classes/mybatis/mapper/PaymentMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-8002/target/classes/mybatis/mybatis.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-consul-8006/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-consul-8006/src/main/java/com/tingyu/springcloud/AppProviderPayment8006.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-consul-8006/src/main/java/com/tingyu/springcloud/controller/PaymentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-consul-8006/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-consul-8006/target/classes/META-INF/springcloud-provider-payment-consul-8006.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-consul-8006/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-consul-8006/target/classes/com/tingyu/springcloud/AppProviderPayment8006.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-consul-8006/target/classes/com/tingyu/springcloud/controller/PaymentController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-nacos-9001/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-nacos-9001/src/main/java/com/tingyu/springcloud/AppNacosProviderPayment9001.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-nacos-9001/src/main/java/com/tingyu/springcloud/controller/PaymentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-nacos-9001/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-nacos-9002/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-nacos-9002/src/main/java/com/tingyu/springcloud/AppNacosProviderPayment9002.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-nacos-9002/src/main/java/com/tingyu/springcloud/controller/NacosController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-nacos-9002/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-zk-8004/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-zk-8004/src/main/java/com/tingyu/springcloud/AppProviderPayment8004.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-zk-8004/src/main/java/com/tingyu/springcloud/controller/PaymentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-zk-8004/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-zk-8004/target/classes/META-INF/springcloud-provider-zk-payment-8004.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-zk-8004/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-zk-8004/target/classes/com/tingyu/springcloud/AppProviderPayment8004.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-payment-provider-zk-8004/target/classes/com/tingyu/springcloud/controller/PaymentController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-storage-service-seata-2002/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-storage-service-seata-2002/src/main/java/spring/AppStorage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-storage-service-seata-2002/src/main/java/spring/controller/StorageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-storage-service-seata-2002/src/main/java/spring/dao/StorageDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-storage-service-seata-2002/src/main/java/spring/domain/Storage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-storage-service-seata-2002/src/main/java/spring/service/StorageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-storage-service-seata-2002/src/main/java/spring/service/impl/StorageServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-storage-service-seata-2002/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-storage-service-seata-2002/src/main/resources/mybatis/mapper/StorageMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-storage-service-seata-2002/src/main/resources/mybatis/mybatis.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-stream-rabbitmq-consumer-8802/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-stream-rabbitmq-consumer-8802/src/main/java/com/tingyu/springcloud/AppConsumerStreamRabbit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-stream-rabbitmq-consumer-8802/src/main/java/com/tingyu/springcloud/controller/StreamConsumerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-stream-rabbitmq-consumer-8802/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-stream-rabbitmq-provider-8801/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-stream-rabbitmq-provider-8801/src/main/java/com/tingyu/springcloud/AppProviderStreamRabbit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-stream-rabbitmq-provider-8801/src/main/java/com/tingyu/springcloud/controller/SendMessageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-stream-rabbitmq-provider-8801/src/main/java/com/tingyu/springcloud/service/SendMessageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-stream-rabbitmq-provider-8801/src/main/java/com/tingyu/springcloud/service/impl/SendMessageServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-stream-rabbitmq-provider-8801/src/main/resources/application.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+    <option name="PARALLEL_COMPILATION" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="springcloud-plus" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\Program Files\Apache\apache-maven-3.6.2\repository" />
+        <option name="mavenHome" value="D:/Program Files/Apache/apache-maven-3.6.2" />
+        <option name="userSettingsFile" value="D:\Program Files\Apache\apache-maven-3.6.2\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectId" id="1ZiQX82epIaDqUeWn8IXOyqn4QF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.097751714" />
+    <property name="project.structure.side.proportion" value="0.7790894" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.folding" />
+    <property name="show.run.dashboard.notification" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.tingyu.springcloud" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Git\repository\springcloud-plus\springcloud-plus\springcloud-storage-service-seata-2002\src\main\java" />
+      <recent name="D:\Git\repository\springcloud-plus\springcloud-plus\springcloud-storage-service-seata-2002\src\main\resources" />
+      <recent name="D:\Git\repository\springcloud-plus\springcloud-plus\springcloud-account-service-seata-2003\src\main\resources" />
+      <recent name="D:\Git\repository\springcloud-plus\springcloud-plus\springcloud-order-service-seata-2001\src\main\resources" />
+      <recent name="D:\Git\repository\springcloud-plus\springcloud-plus\springcloud-alibaba-sentinel-service-8401\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.tingyu.springcloud.config" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Git\repository\springcloud-plus\springcloud-plus\springcloud-provider-payment-8002\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.AppOrderServiceSeata2001">
+    <configuration name="All in springcloud-consumer-order-80" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springcloud-order-consumer-80" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppConfigClient3355" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springcloud-config-client-3355" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tingyu.springcloud.AppConfigClient3355" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppConfigClient3356" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springcloud-config-client-3366" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tingyu.springcloud.AppConfigClient3356" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppConfigServer" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springcloud-config-server-3344" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tingyu.springcloud.AppConfigServer" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppConsulConsumerOrder" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springcloud-order-consumer-consul-80" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tingyu.springcloud.AppConsulConsumerOrder" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppConsumerOrder" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springcloud-order-consumer-80" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tingyu.springcloud.AppConsumerOrder" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppConsumerStreamRabbit" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springcloud-stream-rabbitmq-consumer-8802" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tingyu.springcloud.AppConsumerStreamRabbit" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppGateway9527" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springcloud-gateway-9527" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tingyu.springcloud.AppGateway9527" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppNacosConfigClient" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springcloud-config-nacos-client-3377" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tingyu.springcloud.AppNacosConfigClient" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppNacosConsumer" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springcloud-order-consumer-nacos-80" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tingyu.springcloud.AppNacosConsumer" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppNacosProviderPayment9001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springcloud-payment-provider-nacos-9001" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tingyu.springcloud.AppNacosProviderPayment9001" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppNacosProviderPayment9002" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springcloud-payment-provider-nacos-9002" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tingyu.springcloud.AppNacosProviderPayment9002" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppOrderServiceSeata2001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springcloud-order-service-seata-2001" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tingyu.springcloud.AppOrderServiceSeata2001" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppProviderPayment8001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springcloud-payment-provider-8001" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tingyu.springcloud.AppProviderPayment8001" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppProviderPayment8002" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springcloud-payment-provider-8002" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tingyu.springcloud.AppProviderPayment8002" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppProviderPayment8004" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springcloud-payment-provider-zk-8004" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tingyu.springcloud.AppProviderPayment8004" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppProviderPayment8006" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springcloud-payment-provider-consul-8006" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tingyu.springcloud.AppProviderPayment8006" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppProviderStreamRabbit" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springcloud-stream-rabbitmq-provider-8801" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tingyu.springcloud.AppProviderStreamRabbit" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppSentinelService8401" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springcloud-alibaba-sentinel-service-8401" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tingyu.springcloud.AppSentinelService8401" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppZKConsumerOrder" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springcloud-order-consumer-zk-80" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tingyu.springcloud.AppZKConsumerOrder" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.All in springcloud-consumer-order-80" />
+      <item itemvalue="Spring Boot.AppNacosConsumer" />
+      <item itemvalue="Spring Boot.AppSentinelService8401" />
+      <item itemvalue="Spring Boot.AppProviderPayment8002" />
+      <item itemvalue="Spring Boot.AppConfigClient3356" />
+      <item itemvalue="Spring Boot.AppProviderPayment8001" />
+      <item itemvalue="Spring Boot.AppProviderStreamRabbit" />
+      <item itemvalue="Spring Boot.AppNacosConfigClient" />
+      <item itemvalue="Spring Boot.AppNacosProviderPayment9002" />
+      <item itemvalue="Spring Boot.AppGateway9527" />
+      <item itemvalue="Spring Boot.AppConsumerOrder" />
+      <item itemvalue="Spring Boot.AppConfigClient3355" />
+      <item itemvalue="Spring Boot.AppConfigServer" />
+      <item itemvalue="Spring Boot.AppConsulConsumerOrder" />
+      <item itemvalue="Spring Boot.AppConsumerStreamRabbit" />
+      <item itemvalue="Spring Boot.AppProviderPayment8006" />
+      <item itemvalue="Spring Boot.AppNacosProviderPayment9001" />
+      <item itemvalue="Spring Boot.AppProviderPayment8004" />
+      <item itemvalue="Spring Boot.AppZKConsumerOrder" />
+      <item itemvalue="Spring Boot.AppOrderServiceSeata2001" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.All in springcloud-consumer-order-80" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SshConsoleOptionsProvider">
+    <option name="myEncoding" value="UTF-8" />
+    <option name="myConnectionType" value="NONE" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\admin\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0bbe3eb7-ff61-46b7-aa9f-b14b4f239151" name="Default Changelist" comment="" />
+      <created>1585319471070</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585319471070</updated>
+      <workItem from="1585319472664" duration="10708000" />
+      <workItem from="1585353398012" duration="24737000" />
+      <workItem from="1585390502276" duration="1575000" />
+      <workItem from="1585392127342" duration="407000" />
+      <workItem from="1585393089338" duration="17186000" />
+      <workItem from="1585446378396" duration="12823000" />
+      <workItem from="1585473607069" duration="9834000" />
+      <workItem from="1585483533420" duration="6555000" />
+      <workItem from="1585542052418" duration="5616000" />
+      <workItem from="1585561375338" duration="5723000" />
+      <workItem from="1585576366500" duration="1584000" />
+      <workItem from="1585578361212" duration="3308000" />
+      <workItem from="1585581918840" duration="2970000" />
+      <workItem from="1585617492840" duration="13103000" />
+      <workItem from="1585649167343" duration="1469000" />
+      <workItem from="1585654929959" duration="2425000" />
+      <workItem from="1587478447061" duration="3040000" />
+    </task>
+    <task id="LOCAL-00001" summary="springcloud advance">
+      <created>1585390736707</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1585390736707</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="springcloud advance" />
+    <option name="LAST_COMMIT_MESSAGE" value="springcloud advance" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="370" y="116" key="#Project_Structure" timestamp="1585619718815">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="370" y="116" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1585619718815" />
+    <state x="215" y="105" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585580719940">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="215" y="105" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1585580719940" />
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1585631765085">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1585631765085" />
+    <state x="389" y="90" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1585474882285">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="389" y="90" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1536.824@0.0.1536.824" timestamp="1585474882285" />
+    <state x="444" y="337" width="620" height="291" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1585327617818">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="444" y="337" width="620" height="291" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1585327617818" />
+    <state x="479" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1585632324279">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="479" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1585632324279" />
+    <state x="777" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585578795073">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="777" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1585578795073" />
+    <state x="434" y="277" key="#com.intellij.tools.ToolEditorDialog" timestamp="1585390954427">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="434" y="277" key="#com.intellij.tools.ToolEditorDialog/0.0.1536.824@0.0.1536.824" timestamp="1585390954427" />
+    <state x="511" y="260" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1585484236799">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="511" y="260" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1585484236799" />
+    <state x="196" y="9" key="CommitChangelistDialog2" timestamp="1585390735483">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="196" y="9" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1585390735483" />
+    <state x="570" y="102" key="FileChooserDialogImpl" timestamp="1585480518939">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="570" y="102" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1585480518939" />
+    <state x="615" y="331" key="Github.ShareDialog" timestamp="1585391198705">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="615" y="331" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1585391198705" />
+    <state width="1493" height="199" key="GridCell.Tab.0.bottom" timestamp="1585635411257">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="199" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585635411257" />
+    <state width="1493" height="199" key="GridCell.Tab.0.center" timestamp="1585635411257">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="199" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1585635411257" />
+    <state width="1493" height="199" key="GridCell.Tab.0.left" timestamp="1585635411257">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="199" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1585635411257" />
+    <state width="1493" height="199" key="GridCell.Tab.0.right" timestamp="1585635411257">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="199" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1585635411257" />
+    <state width="1493" height="199" key="GridCell.Tab.1.bottom" timestamp="1585635411258">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="199" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585635411258" />
+    <state width="1493" height="199" key="GridCell.Tab.1.center" timestamp="1585635411258">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="199" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1585635411258" />
+    <state width="1493" height="199" key="GridCell.Tab.1.left" timestamp="1585635411258">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="199" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1585635411258" />
+    <state width="1493" height="199" key="GridCell.Tab.1.right" timestamp="1585635411258">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="199" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1585635411258" />
+    <state x="429" y="110" key="NewModule_or_Project.wizard" timestamp="1585480520292">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="429" y="110" key="NewModule_or_Project.wizard/0.0.1536.824@0.0.1536.824" timestamp="1585480520292" />
+    <state x="261" y="123" key="RollbackChangesDialog" timestamp="1585581652663">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="261" y="123" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1585581652663" />
+    <state x="30" y="0" width="1329" height="824" key="SettingsEditor" timestamp="1585652341069">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="30" y="0" width="1329" height="824" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1585652341069" />
+    <state x="359" y="193" key="Vcs.Push.Dialog.v2" timestamp="1585394909728">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="359" y="193" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1585394909728" />
+    <state x="497" y="219" key="com.intellij.ide.util.TipDialog" timestamp="1585654932783">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="497" y="219" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1585654932783" />
+    <state x="551" y="306" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1585580130488">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="551" y="306" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1536.824@0.0.1536.824" timestamp="1585580130488" />
+    <state x="150" y="121" key="new project wizard" timestamp="1585579415553">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="150" y="121" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1585579415553" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1585322891215">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1585322891215" />
+    <state x="374" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1585478146293">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="374" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1585478146293" />
+  </component>
+</project>

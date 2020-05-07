@@ -1,0 +1,25 @@
+server:
+  port: 9527
+
+spring:
+  application:
+    name: springcloud-gateway-service
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true #开启从注册中心动态创建路由的功能
+      routes:
+        - id: payment_001
+         # uri: http://localhost:8001
+          uri: lb://springcloud-payment-service
+          predicates:
+            - Path=/payment/get/**
+        - id: payment_002
+         # uri: http://localhost:8001
+          uri: lb://springcloud-payment-service
+          predicates:
+            - Path=/payment/lb/**
+
+    zookeeper:
+      connect-string: 192.168.1.159:2181

@@ -1,0 +1,26 @@
+server:
+  port: 3377
+
+spring:
+  application:
+    name: nacos-config-client
+
+
+  cloud:
+    nacos:
+      config:
+        server-addr: 192.168.1.159:1111
+        #server-addr: localhost:8848
+        file-extension: yaml
+        #namespace: 7adb62c5-f113-435d-9c6a-a2a49b4853b2
+        #group: DEV_GROUP
+
+      discovery:
+        server-addr: 192.168.1.159:1111 # 连接至 linux 上的 nacos 集群的反向代理服务器 nginx
+      #server-addr: localhost:8848
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

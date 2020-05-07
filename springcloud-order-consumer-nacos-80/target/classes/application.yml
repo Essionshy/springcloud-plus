@@ -1,0 +1,19 @@
+server:
+  port: 80
+
+spring:
+  application:
+    name: springcloud-order-consumer-service
+
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848 # 此处不用添加http：//
+
+# 一定要添加监控端口，否则启动报错
+management:
+  endpoints:
+    web:
+      exposure:
+        include: *

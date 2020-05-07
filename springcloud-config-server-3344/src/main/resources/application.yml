@@ -1,0 +1,31 @@
+server:
+  port: 3344
+
+spring:
+  application:
+    name: springcloud-config-server
+
+#配置Zookeeper 服务注册中心
+  cloud:
+    zookeeper:
+      connect-string: 192.168.1.159:2181
+
+    config:
+      server:
+        git:
+          uri: https://github.com/Essionshy/springcloud-config.git
+          search-paths: springcloud-config
+          default-label: master
+          username: 1218817610@qq.com
+          password: zookeeper2181
+  rabbitmq:
+    host: 192.168.1.159
+    port: 5672
+    username: guest
+    password: guest
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "bus-refresh"

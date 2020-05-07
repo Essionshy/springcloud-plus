@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tingyu.springcloud.dao.PaymentDao">
+
+    <resultMap id="paymentMap" type="payment">
+        <id column="id" property="id" jdbcType="NUMERIC"/>
+        <result column="amount" property="amount" jdbcType="DECIMAL"/>
+        <result column="deleted" property="deleted" jdbcType="NUMERIC"/>
+        <result column="create_time" property="createTime" jdbcType="TIMESTAMP"/>
+        <result column="update_time" property="updateTime" jdbcType="TIMESTAMP"/>
+    </resultMap>
+   <select id="findById" parameterType="int" resultMap="paymentMap">
+       select * from tbl_payment where id=#{id}
+   </select>
+    <insert id="create" parameterType="payment" keyProperty="id" useGeneratedKeys="true">
+        insert into tbl_payment(amount,deleted)values (#{amount},#{deleted})
+    </insert>
+
+</mapper>

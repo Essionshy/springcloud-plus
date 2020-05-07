@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springcloud-order-consumer-80" />
+        <module name="springcloud-stream-rabbitmq-provider-8801" />
+        <module name="springcloud-alibaba-sentinel-service-8401" />
+        <module name="springcloud-config-server-3344" />
+        <module name="springcloud-config-client-3355" />
+        <module name="springcloud-order-consumer-consul-80" />
+        <module name="springcloud-payment-provider-8002" />
+        <module name="springcloud-stream-rabbitmq-consumer-8802" />
+        <module name="springcloud-payment-provider-nacos-9002" />
+        <module name="springcloud-payment-provider-nacos-9001" />
+        <module name="springcloud-api-commons" />
+        <module name="springcloud-order-consumer-nacos-80" />
+        <module name="springcloud-payment-provider-consul-8006" />
+        <module name="springcloud-gateway-9527" />
+        <module name="springcloud-order-service-seata-2001" />
+        <module name="springcloud-storage-service-seata-2002" />
+        <module name="springcloud-account-service-seata-2003" />
+        <module name="springcloud-payment-provider-zk-8004" />
+        <module name="springcloud-config-nacos-client-3377" />
+        <module name="springcloud-order-consumer-zk-80" />
+        <module name="springcloud-config-client-3366" />
+        <module name="springcloud-payment-provider-8001" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="springcloud-payment-8001" target="1.8" />
+      <module name="springcloud-provider-zk-payment-8004" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="springcloud-account-service-seata-2003" options="" />
+      <module name="springcloud-alibaba-sentinel-service-8401" options="" />
+      <module name="springcloud-api-commons" options="" />
+      <module name="springcloud-config-client-3355" options="" />
+      <module name="springcloud-config-client-3366" options="" />
+      <module name="springcloud-config-nacos-client-3377" options="" />
+      <module name="springcloud-config-server-3344" options="" />
+      <module name="springcloud-gateway-9527" options="" />
+      <module name="springcloud-order-consumer-80" options="" />
+      <module name="springcloud-order-consumer-consul-80" options="" />
+      <module name="springcloud-order-consumer-nacos-80" options="" />
+      <module name="springcloud-order-consumer-zk-80" options="" />
+      <module name="springcloud-order-service-seata-2001" options="" />
+      <module name="springcloud-payment-8001" options="-parameters" />
+      <module name="springcloud-payment-provider-8001" options="" />
+      <module name="springcloud-payment-provider-8002" options="" />
+      <module name="springcloud-payment-provider-consul-8006" options="" />
+      <module name="springcloud-payment-provider-nacos-9001" options="" />
+      <module name="springcloud-payment-provider-nacos-9002" options="" />
+      <module name="springcloud-payment-provider-zk-8004" options="" />
+      <module name="springcloud-plus" options="-parameters" />
+      <module name="springcloud-provider-zk-payment-8004" options="-parameters" />
+      <module name="springcloud-storage-service-seata-2002" options="" />
+      <module name="springcloud-stream-rabbitmq-consumer-8802" options="" />
+      <module name="springcloud-stream-rabbitmq-provider-8801" options="" />
+    </option>
+  </component>
+</project>

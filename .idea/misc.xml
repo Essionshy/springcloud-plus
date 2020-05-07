@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <type id="Spring" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-stream-rabbitmq-provider-8801/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-stream-rabbitmq-consumer-8802/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-payment-provider-zk-8004/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-payment-provider-nacos-9002/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-payment-provider-nacos-9001/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-payment-provider-consul-8006/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-payment-provider-8002/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-payment-provider-8001/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-order-consumer-zk-80/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-order-consumer-nacos-80/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-order-consumer-consul-80/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-order-consumer-80/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-gateway-9527/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-config-server-3344/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-config-client-3356/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-config-client-3355/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-api-commons/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

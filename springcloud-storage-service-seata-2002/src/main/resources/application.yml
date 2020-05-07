@@ -1,0 +1,43 @@
+server:
+  port: 2002
+
+
+spring:
+  application:
+    name: seata-storage-service
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://127.0.0.1/seata_storage?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root-xz
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+
+# 1.0新添加的enabled激活自动配置，使得我们可以在yaml/properties文件中配置，
+# 避免了以前需要客户端引入2个文件：
+# file.conf 和 registry.conf
+seata:
+  enabled: true # 1.0新特性，需要依赖seata-spring-boot-starter,默认为true
+  tx-service-group: geekplus_tx_group
+
+
+  registry:
+    type: nacos
+    nacos:
+      server-addr: localhost:8848
+
+  client:
+    support:
+      spring:
+        datasource-autoproxy: true
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

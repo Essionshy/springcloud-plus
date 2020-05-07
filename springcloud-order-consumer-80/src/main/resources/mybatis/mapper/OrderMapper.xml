@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tingyu.springcloud.dao.OrderDao">
+
+    <resultMap id="orderMap" type="order">
+        <id column="id" property="id" jdbcType="NUMERIC"/>
+        <result column="name" property="name" jdbcType="VARCHAR"/>
+
+    </resultMap>
+   <select id="getById" parameterType="int" resultMap="orderMap">
+       select * from tbl_order where id=#{id}
+   </select>
+    <insert id="create" parameterType="order" keyProperty="id" useGeneratedKeys="true" >
+        insert into tbl_order(name)values (#{name})
+    </insert>
+
+</mapper>

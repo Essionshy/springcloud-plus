@@ -1,0 +1,30 @@
+server:
+  port: 8801
+
+
+spring:
+  application:
+    name: springcloud-stream-provider
+  rabbitmq:
+
+
+  cloud:
+    zookeeper:
+      connect-string: 192.168.1.159:2181
+
+    stream:
+      binders:
+        defaultRabbit:
+          type: rabbit
+          environment:
+            spring:
+              rabbitmq:
+                host: 192.168.1.159
+                port: 5672
+                username: guest
+                password: guest
+      bindings:
+        output:
+          destination: studyExchange
+          content-type: application/json
+          binder: defaultRabbit
