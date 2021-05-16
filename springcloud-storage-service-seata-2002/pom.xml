@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>springcloud-storage-service-seata-2001</artifactId>
+    <artifactId>springcloud-storage-service-seata-2002</artifactId>
 
     <dependencies>
         <dependency>
